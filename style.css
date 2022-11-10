@@ -1,0 +1,160 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+.container{
+    max-width: 1000px;
+    margin-bottom: 1rem;
+    padding: 30px; 
+}
+.top-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.top-part .left{
+    flex: 1;
+}
+.top-part .left h1{
+    color: var(--Very-Dark-Magenta);
+    font-size: 40px;
+    max-width: 300px;
+    font-weight: 700;
+}
+.top-part .left p{
+    margin-top: 1rem;
+    color: var(--Dark-Grayish-Magenta);
+    max-width: 350px;
+    line-height: 1.3;
+}
+.top-part .right .stars{
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+    width: 380px;
+}
+.top-part .right .stars:nth-child(1){
+    margin-left: -80px;
+}
+.top-part .right .stars:nth-child(2){
+    margin-left: -40px;
+}
+.stars h4{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700
+}
+.bottom-part{
+    display: flex;
+    position: relative;
+    gap: 20px;
+}
+.bottom-part .box:nth-child(1){
+    transform: translateY(-30px);
+}
+.bottom-part .box:nth-child(2){
+    transform: translateY(-15px);
+}
+.bottom-part .box{
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 5px;
+    padding: 20px;
+    color: var(--White);
+}
+.bottom-part .box .info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bottom-part .box .info div p:first-of-type{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.bottom-part .box .info div p:last-of-type{
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.bottom-part .info img{
+    border-radius: 50%;
+    width: 40px;
+}
+.bottom-part .box .text{
+    margin-top: 1.75rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media (min-width:375px) and (max-width:992px){
+    .container{
+        max-width: 370px;
+    }
+    .top-part{
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+    .top-part .left{
+        margin-bottom: 1rem;
+    }
+    .top-part .left h1{
+        font-size: 25px;
+        margin: auto;
+        max-width: 200px;
+        text-align: center;
+    }
+    .top-part .left p{
+        max-width: 260px;
+        text-align: center;
+    }
+    .top-part .right .stars{
+        flex-direction: column;
+        margin: 0 auto 10px;
+        gap: 10px;
+        width: 280px;
+    }
+    .top-part .right .stars:nth-child(1){
+        margin-left: auto;
+    }
+    .top-part .right .stars:nth-child(2){
+        margin-left: auto;
+    }
+     .bottom-part{
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: 0;
+    }
+    .bottom-part .box{
+        width: 280px;
+    }
+    .bottom-part .box .text{
+        margin-top: 1rem;
+    }
+  }
